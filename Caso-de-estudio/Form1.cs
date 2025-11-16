@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using static System.Windows.Forms.VisualStyles.VisualStyleElement;
 
 namespace Caso_de_estudio
 {
@@ -29,31 +30,35 @@ namespace Caso_de_estudio
         /// <param name="e">The event data associated with the click event.</param>
         private void btnAgregarP_Click(object sender, EventArgs e)
         {
-            //Agrega un nodo hijo a la raiz (es la que se selecciona)
-            if(tvPuestos.SelectedNode != null)
+           
+            // Si hay un nodo seleccionado, se agrega como hijo
+            if (tvPuestos.SelectedNode != null)
             {
                 tvPuestos.SelectedNode.Nodes.Add(tbPuesto.Text);
             }
-            //Crea un nodo raiz
-            if (tvPuestos.Nodes.Count == 0)
-            {
-                //Agrega nodo con el nombre / puesto escrito en el textbox
-                tvPuestos.Nodes.Add(tbPuesto.Text);
-
-            }
             else
             {
-                //Manda una alerta cuando el usuario quiere crear otra raíz
-                MessageBox.Show("Solo puede agregar una raíz", "Error", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                // Si NO hay nodo seleccionado Y ya hay un nodo raíz, muestra la alerta
+                if (tvPuestos.Nodes.Count > 0)
+                {
+                    MessageBox.Show("No se puede agregar más de una raíz", "Error", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                }
+                else
+                {
+                    // Si NO hay nodo raíz, lo agrega normalmente
+                    tvPuestos.Nodes.Add(tbPuesto.Text);
+                }
             }
-
-
             //Expande el arbol para poder mostrar todos los elementos
             tvPuestos.ExpandAll();
-
-
-
         }
+
+
+        
+
+
+
+        
 
         /// <summary>
         /// Handles the click event of the "Eliminar" button, removing the selected node from the tree view.
@@ -160,12 +165,110 @@ namespace Caso_de_estudio
 
         }
 
+
+        private void btnRecorridoP_Click(object sender, EventArgs e)
+        {
+
+            lbOrden.Items.Clear(); // Borra el contenido anterior
+            if (tvPuestos.Nodes.Count > 0)
+            {
+                List<string> resultado = new List<string>();
+                RecorridoPreorden(tvPuestos.Nodes[0], resultado);
+
+                // Ahora pasas el resultado al ListBox
+                foreach (string item in resultado)
+                {
+                    lbOrden.Items.Add(item);
+                }
+            }
+        }
+
+        public void RecorridoPreorden(TreeNode nodo, List<string> resultado)
+        {
+            if (nodo == null) return;
+            resultado.Add(nodo.Text); // visitar nodo actual
+            foreach (TreeNode hijo in nodo.Nodes) // recorrer hijos
+            {
+                RecorridoPreorden(hijo, resultado);
+            }
+        }
+
+
+
+        private void btnRecorridoI_Click(object sender, EventArgs e)
+        {
+
+            lbOrden.Items.Clear(); // Borra el contenido anterior
+            if (tvPuestos.Nodes.Count > 0)
+            {
+                List<string> resultado = new List<string>();
+                RecorridoPreorden(tvPuestos.Nodes[0], resultado);
+
+                // Ahora pasas el resultado al ListBox
+                foreach (string item in resultado)
+                {
+                    lbOrden.Items.Add(item);
+                }
+
+
+            }
+
+
+        }
+
+        public void RecorridoInorden(TreeNode nodo, List<string> resultado)
+        {
+            if (nodo == null) return;
+            if (nodo.Nodes.Count > 0)
+                RecorridoInorden(nodo.Nodes[0], resultado); // primer hijo
+            resultado.Add(nodo.Text); // visitar nodo actual
+            for (int i = 1; i < nodo.Nodes.Count; i++) // demás hijos
+            {
+                RecorridoInorden(nodo.Nodes[i], resultado);
+            }
+        }
+
+
+
+        private void btnRecorridoO_Click(object sender, EventArgs e)
+        {
+
+            lbOrden.Items.Clear(); // Borra el contenido anterior
+            if (tvPuestos.Nodes.Count > 0)
+            {
+                List<string> resultado = new List<string>();
+                RecorridoPreorden(tvPuestos.Nodes[0], resultado);
+
+                // Ahora pasas el resultado al ListBox
+                foreach (string item in resultado)
+                {
+                    lbOrden.Items.Add(item);
+                }
+
+
+            }
+
+        }
+
+        public void RecorridoPostorden(TreeNode nodo, List<string> resultado)
+        {
+            if (nodo == null) return;
+            foreach (TreeNode hijo in nodo.Nodes)
+            {
+                RecorridoPostorden(hijo, resultado);
+            }
+            resultado.Add(nodo.Text); // visitar nodo actual al final
+        }
+
+
         private void btnNiveles_Click(object sender, EventArgs e)
         {
 
 
 
         }
+
+       
     }
 
 

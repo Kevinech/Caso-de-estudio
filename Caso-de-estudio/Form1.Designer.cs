@@ -36,6 +36,10 @@
             this.btnConteoP = new System.Windows.Forms.Button();
             this.btnNiveles = new System.Windows.Forms.Button();
             this.btnEliminarP = new System.Windows.Forms.Button();
+            this.lbOrden = new System.Windows.Forms.ListBox();
+            this.btnRecorridoP = new System.Windows.Forms.Button();
+            this.btnRecorridoI = new System.Windows.Forms.Button();
+            this.btnRecorridoO = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // tvPuestos
@@ -111,11 +115,54 @@
             this.btnEliminarP.UseVisualStyleBackColor = true;
             this.btnEliminarP.Click += new System.EventHandler(this.btnEliminarP_Click);
             // 
+            // lbOrden
+            // 
+            this.lbOrden.FormattingEnabled = true;
+            this.lbOrden.ItemHeight = 20;
+            this.lbOrden.Location = new System.Drawing.Point(654, 133);
+            this.lbOrden.Name = "lbOrden";
+            this.lbOrden.Size = new System.Drawing.Size(377, 344);
+            this.lbOrden.TabIndex = 9;
+            // 
+            // btnRecorridoP
+            // 
+            this.btnRecorridoP.Location = new System.Drawing.Point(654, 101);
+            this.btnRecorridoP.Name = "btnRecorridoP";
+            this.btnRecorridoP.Size = new System.Drawing.Size(89, 26);
+            this.btnRecorridoP.TabIndex = 10;
+            this.btnRecorridoP.Text = "Preorden";
+            this.btnRecorridoP.UseVisualStyleBackColor = true;
+            this.btnRecorridoP.Click += new System.EventHandler(this.btnRecorridoP_Click);
+            // 
+            // btnRecorridoI
+            // 
+            this.btnRecorridoI.Location = new System.Drawing.Point(804, 101);
+            this.btnRecorridoI.Name = "btnRecorridoI";
+            this.btnRecorridoI.Size = new System.Drawing.Size(75, 26);
+            this.btnRecorridoI.TabIndex = 11;
+            this.btnRecorridoI.Text = "Inorden";
+            this.btnRecorridoI.UseVisualStyleBackColor = true;
+            this.btnRecorridoI.Click += new System.EventHandler(this.btnRecorridoI_Click);
+            // 
+            // btnRecorridoO
+            // 
+            this.btnRecorridoO.Location = new System.Drawing.Point(936, 98);
+            this.btnRecorridoO.Name = "btnRecorridoO";
+            this.btnRecorridoO.Size = new System.Drawing.Size(95, 29);
+            this.btnRecorridoO.TabIndex = 12;
+            this.btnRecorridoO.Text = "Postorden";
+            this.btnRecorridoO.UseVisualStyleBackColor = true;
+            this.btnRecorridoO.Click += new System.EventHandler(this.btnRecorridoO_Click);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1200, 692);
+            this.Controls.Add(this.btnRecorridoO);
+            this.Controls.Add(this.btnRecorridoI);
+            this.Controls.Add(this.btnRecorridoP);
+            this.Controls.Add(this.lbOrden);
             this.Controls.Add(this.btnEliminarP);
             this.Controls.Add(this.btnNiveles);
             this.Controls.Add(this.btnConteoP);
@@ -143,6 +190,10 @@
         private System.Windows.Forms.Button btnConteoP;
         private System.Windows.Forms.Button btnNiveles;
         private System.Windows.Forms.Button btnEliminarP;
+        private System.Windows.Forms.ListBox lbOrden;
+        private System.Windows.Forms.Button btnRecorridoP;
+        private System.Windows.Forms.Button btnRecorridoI;
+        private System.Windows.Forms.Button btnRecorridoO;
     }
 }
 
