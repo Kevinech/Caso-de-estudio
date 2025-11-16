@@ -34,8 +34,6 @@ El **Parque Tecnológico Innovatec** necesita un sistema que permita modelar su 
 
 ---
 
----
-
 ## 📝 Evaluación
 - **10 pts**: Implementación del árbol (corrección, funciones, sin errores)
 - **10 pts**: Implementación del grafo (representación, algoritmos, funcionamiento)
@@ -46,5 +44,7 @@ El **Parque Tecnológico Innovatec** necesita un sistema que permita modelar su 
 
 ## 👨‍💻 Créditos
 Desarrollado por Kev
+
 Para la materia: programación estructurada, Universidad Americana (UAM)
+
 Noviembre 2025
