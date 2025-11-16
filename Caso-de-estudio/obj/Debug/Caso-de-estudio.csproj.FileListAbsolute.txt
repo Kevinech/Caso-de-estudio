@@ -1,0 +1,15 @@
+C:\Users\inmo\Desktop\ProgramacionEstructurada\Caso-de-estudio\Caso-de-estudio\bin\Debug\Caso-de-estudio.exe.config
+C:\Users\inmo\Desktop\ProgramacionEstructurada\Caso-de-estudio\Caso-de-estudio\bin\Debug\Caso-de-estudio.exe
+C:\Users\inmo\Desktop\ProgramacionEstructurada\Caso-de-estudio\Caso-de-estudio\bin\Debug\Caso-de-estudio.pdb
+C:\Users\inmo\Desktop\ProgramacionEstructurada\Caso-de-estudio\Caso-de-estudio\bin\Debug\MetroFramework.Design.dll
+C:\Users\inmo\Desktop\ProgramacionEstructurada\Caso-de-estudio\Caso-de-estudio\bin\Debug\MetroFramework.dll
+C:\Users\inmo\Desktop\ProgramacionEstructurada\Caso-de-estudio\Caso-de-estudio\bin\Debug\MetroFramework.Fonts.dll
+C:\Users\inmo\Desktop\ProgramacionEstructurada\Caso-de-estudio\Caso-de-estudio\obj\Debug\Caso-de-estudio.csproj.AssemblyReference.cache
+C:\Users\inmo\Desktop\ProgramacionEstructurada\Caso-de-estudio\Caso-de-estudio\obj\Debug\Caso_de_estudio.Form1.resources
+C:\Users\inmo\Desktop\ProgramacionEstructurada\Caso-de-estudio\Caso-de-estudio\obj\Debug\Caso_de_estudio.Properties.Resources.resources
+C:\Users\inmo\Desktop\ProgramacionEstructurada\Caso-de-estudio\Caso-de-estudio\obj\Debug\Caso-de-estudio.csproj.GenerateResource.cache
+C:\Users\inmo\Desktop\ProgramacionEstructurada\Caso-de-estudio\Caso-de-estudio\obj\Debug\Caso-de-estudio.csproj.CoreCompileInputs.cache
+C:\Users\inmo\Desktop\ProgramacionEstructurada\Caso-de-estudio\Caso-de-estudio\obj\Debug\Caso-de-.B7F99FB4.Up2Date
+C:\Users\inmo\Desktop\ProgramacionEstructurada\Caso-de-estudio\Caso-de-estudio\obj\Debug\Caso-de-estudio.exe
+C:\Users\inmo\Desktop\ProgramacionEstructurada\Caso-de-estudio\Caso-de-estudio\obj\Debug\Caso-de-estudio.pdb
+C:\Users\inmo\Desktop\ProgramacionEstructurada\Caso-de-estudio\Caso-de-estudio\obj\Debug\Caso-de-estudio.exe.config
