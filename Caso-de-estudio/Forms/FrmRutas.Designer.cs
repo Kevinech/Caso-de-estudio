@@ -205,6 +205,7 @@
             this.btnRutasC.TabIndex = 15;
             this.btnRutasC.Text = "Mostrar rutas";
             this.btnRutasC.UseVisualStyleBackColor = true;
+            this.btnRutasC.Click += new System.EventHandler(this.btnRutasC_Click);
             // 
             // label6
             // 
@@ -262,6 +263,7 @@
             this.button1.TabIndex = 16;
             this.button1.Text = "Mostrar rutas cortas";
             this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // FrmRutas
             // 

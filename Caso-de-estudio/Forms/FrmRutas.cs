@@ -28,7 +28,7 @@ namespace Caso_de_estudio.Forms
 
             SistemaR.GetAgregarNodo(tbAgregarE.Text);
             lbEdificios.Items.Add(tbAgregarE.Text);
-            
+
             cbOrigenE.Items.Add(tbAgregarE.Text);
             cbDestinoE.Items.Add(tbAgregarE.Text);
             tbAgregarE.Clear();
@@ -38,8 +38,8 @@ namespace Caso_de_estudio.Forms
 
         private void btnAgregarD_Click(object sender, EventArgs e)
         {
-        
-        
+
+
             string origen = cbOrigenE.Text;
             string destino = cbDestinoE.Text;
             string NDistancia = tbDistancia.Text;
@@ -76,7 +76,7 @@ namespace Caso_de_estudio.Forms
             }
         }
 
-        
+
 
         private void btnMostrarC_Click(object sender, EventArgs e)
         {
@@ -93,6 +93,31 @@ namespace Caso_de_estudio.Forms
             lbVisualización.Items.Clear();
             lbVisualización.Items.Add(conexo ? "Los grafos estan conectados correctamente." : "los grafos no estan conectados.");
         }
+
+        private void btnRutasC_Click(object sender, EventArgs e)
+        {
+            var recorrido = SistemaR.BFS(cbOrigenE.Text);
+            lbVisualización.Items.Clear();
+            lbVisualización.Items.Add("Recorrido BFS:");
+            foreach (var nodo in recorrido)
+                lbVisualización.Items.Add(nodo);
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            int distanciaTotal;
+            var ruta = SistemaR.RutaMasCorta(cbOrigenE.Text, cbDestinoE.Text, out distanciaTotal);
+            lbVisualización.Items.Clear();
+            if (ruta.Count == 0)
+                lbVisualización.Items.Add("No existe ruta entre los edificios seleccionados.");
+            else
+            {
+                lbVisualización.Items.Add("Ruta más corta:");
+                lbVisualización.Items.Add(string.Join(" ----> ", ruta));
+                lbVisualización.Items.Add($"Distancia total: {distanciaTotal}");
+            }
+        }
     }
 }
+
 
