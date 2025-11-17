@@ -14,3 +14,4 @@ C:\Users\inmo\Desktop\ProgramacionEstructurada\Caso-de-estudio\Caso-de-estudio\o
 C:\Users\inmo\Desktop\ProgramacionEstructurada\Caso-de-estudio\Caso-de-estudio\obj\Debug\Caso-de-estudio.exe.config
 C:\Users\inmo\Desktop\ProgramacionEstructurada\Caso-de-estudio\Caso-de-estudio\obj\Debug\Caso_de_estudio.Forms.FrmInicio.resources
 C:\Users\inmo\Desktop\ProgramacionEstructurada\Caso-de-estudio\Caso-de-estudio\obj\Debug\Caso_de_estudio.FrmJerarquia.resources
+C:\Users\inmo\Desktop\ProgramacionEstructurada\Caso-de-estudio\Caso-de-estudio\obj\Debug\Caso_de_estudio.Forms.FrmRutas.resources

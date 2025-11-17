@@ -10,11 +10,19 @@ using System.Windows.Forms;
 
 namespace Caso_de_estudio.Forms
 {
-    public partial class FrmRutas : Form
+    public partial class FrmRutas : MetroFramework.Forms.MetroForm
     {
+
         public FrmRutas()
         {
             InitializeComponent();
+        }
+
+
+        
+        private void btnAgregarE_Click(object sender, EventArgs e)
+        {
+            
         }
     }
 }

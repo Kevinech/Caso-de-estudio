@@ -50,7 +50,7 @@
             this.tvPuestos.Location = new System.Drawing.Point(75, 148);
             this.tvPuestos.Name = "tvPuestos";
             this.tvPuestos.Size = new System.Drawing.Size(413, 355);
-            this.tvPuestos.TabIndex = 0;
+            this.tvPuestos.TabIndex = 3;
             // 
             // label1
             // 
@@ -66,7 +66,7 @@
             this.btnAgregarP.Location = new System.Drawing.Point(6, 14);
             this.btnAgregarP.Name = "btnAgregarP";
             this.btnAgregarP.Size = new System.Drawing.Size(88, 41);
-            this.btnAgregarP.TabIndex = 2;
+            this.btnAgregarP.TabIndex = 4;
             this.btnAgregarP.Text = "Agregar";
             this.btnAgregarP.UseVisualStyleBackColor = true;
             this.btnAgregarP.Click += new System.EventHandler(this.btnAgregarP_Click);
@@ -76,14 +76,14 @@
             this.tbPuesto.Location = new System.Drawing.Point(75, 116);
             this.tbPuesto.Name = "tbPuesto";
             this.tbPuesto.Size = new System.Drawing.Size(413, 26);
-            this.tbPuesto.TabIndex = 3;
+            this.tbPuesto.TabIndex = 2;
             // 
             // btnBusquedaP
             // 
             this.btnBusquedaP.Location = new System.Drawing.Point(6, 104);
             this.btnBusquedaP.Name = "btnBusquedaP";
             this.btnBusquedaP.Size = new System.Drawing.Size(88, 39);
-            this.btnBusquedaP.TabIndex = 4;
+            this.btnBusquedaP.TabIndex = 6;
             this.btnBusquedaP.Text = "Buscar";
             this.btnBusquedaP.UseVisualStyleBackColor = true;
             this.btnBusquedaP.Click += new System.EventHandler(this.btnBusquedaP_Click);
@@ -93,7 +93,7 @@
             this.btnConteoP.Location = new System.Drawing.Point(6, 197);
             this.btnConteoP.Name = "btnConteoP";
             this.btnConteoP.Size = new System.Drawing.Size(88, 44);
-            this.btnConteoP.TabIndex = 5;
+            this.btnConteoP.TabIndex = 8;
             this.btnConteoP.Text = "Conteo";
             this.btnConteoP.UseVisualStyleBackColor = true;
             this.btnConteoP.Click += new System.EventHandler(this.btnConteoP_Click);
@@ -104,7 +104,7 @@
             this.btnNiveles.Location = new System.Drawing.Point(6, 149);
             this.btnNiveles.Name = "btnNiveles";
             this.btnNiveles.Size = new System.Drawing.Size(88, 42);
-            this.btnNiveles.TabIndex = 6;
+            this.btnNiveles.TabIndex = 7;
             this.btnNiveles.Text = "Niveles";
             this.btnNiveles.UseVisualStyleBackColor = true;
             this.btnNiveles.Click += new System.EventHandler(this.btnNiveles_Click);
@@ -114,7 +114,7 @@
             this.btnEliminarP.Location = new System.Drawing.Point(6, 61);
             this.btnEliminarP.Name = "btnEliminarP";
             this.btnEliminarP.Size = new System.Drawing.Size(88, 37);
-            this.btnEliminarP.TabIndex = 7;
+            this.btnEliminarP.TabIndex = 5;
             this.btnEliminarP.Text = "Eliminar";
             this.btnEliminarP.UseVisualStyleBackColor = true;
             this.btnEliminarP.Click += new System.EventHandler(this.btnEliminarP_Click);
@@ -126,14 +126,14 @@
             this.lbOrden.Location = new System.Drawing.Point(734, 116);
             this.lbOrden.Name = "lbOrden";
             this.lbOrden.Size = new System.Drawing.Size(377, 344);
-            this.lbOrden.TabIndex = 9;
+            this.lbOrden.TabIndex = 11;
             // 
             // btnRecorridoP
             // 
             this.btnRecorridoP.Location = new System.Drawing.Point(4, 25);
             this.btnRecorridoP.Name = "btnRecorridoP";
             this.btnRecorridoP.Size = new System.Drawing.Size(97, 40);
-            this.btnRecorridoP.TabIndex = 10;
+            this.btnRecorridoP.TabIndex = 9;
             this.btnRecorridoP.Text = "Preorden";
             this.btnRecorridoP.UseVisualStyleBackColor = true;
             this.btnRecorridoP.Click += new System.EventHandler(this.btnRecorridoP_Click);
@@ -143,7 +143,7 @@
             this.btnRecorridoO.Location = new System.Drawing.Point(6, 77);
             this.btnRecorridoO.Name = "btnRecorridoO";
             this.btnRecorridoO.Size = new System.Drawing.Size(95, 39);
-            this.btnRecorridoO.TabIndex = 12;
+            this.btnRecorridoO.TabIndex = 10;
             this.btnRecorridoO.Text = "Postorden";
             this.btnRecorridoO.UseVisualStyleBackColor = true;
             this.btnRecorridoO.Click += new System.EventHandler(this.btnRecorridoO_Click);
@@ -171,7 +171,7 @@
             this.groupBox2.TabIndex = 14;
             this.groupBox2.TabStop = false;
             // 
-            // Form1
+            // FrmJerarquia
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -184,7 +184,7 @@
             this.Controls.Add(this.tvPuestos);
             this.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
             this.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.Name = "Form1";
+            this.Name = "FrmJerarquia";
             this.Text = "Jerarquía Organizativa";
             this.groupBox1.ResumeLayout(false);
             this.groupBox2.ResumeLayout(false);

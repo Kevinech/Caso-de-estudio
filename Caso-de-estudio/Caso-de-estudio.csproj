@@ -76,6 +76,9 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="Forms\FrmRutas.resx">
+      <DependentUpon>FrmRutas.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="FrmJerarquia.resx">
       <DependentUpon>FrmJerarquia.cs</DependentUpon>
     </EmbeddedResource>
