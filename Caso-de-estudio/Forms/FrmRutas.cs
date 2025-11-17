@@ -22,7 +22,7 @@ namespace Caso_de_estudio.Forms
         Grafo SistemaR = new Grafo();
 
 
-
+        //hola profe, algunas documentaciones, literalmente documentan mi camino hacia la demencia....
         private void btnAgregarE_Click(object sender, EventArgs e)
         {
 
