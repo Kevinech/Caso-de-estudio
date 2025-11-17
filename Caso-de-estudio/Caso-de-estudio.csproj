@@ -56,6 +56,12 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Clases\Nodos.cs" />
+    <Compile Include="Forms\FrmRutas.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\FrmRutas.Designer.cs">
+      <DependentUpon>FrmRutas.cs</DependentUpon>
+    </Compile>
     <Compile Include="FrmJerarquia.cs">
       <SubType>Form</SubType>
     </Compile>

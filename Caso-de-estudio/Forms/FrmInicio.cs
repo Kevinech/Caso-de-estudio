@@ -22,5 +22,11 @@ namespace Caso_de_estudio.Forms
             FrmJerarquia arbol = new FrmJerarquia();
             arbol.ShowDialog();
         }
+
+        private void btnGrafos_Click(object sender, EventArgs e)
+        {
+            FrmRutas grafos = new FrmRutas();
+            grafos.ShowDialog();
+        }
     }
 }

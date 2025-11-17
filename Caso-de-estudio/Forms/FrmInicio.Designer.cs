@@ -62,6 +62,7 @@
             this.btnGrafos.TabIndex = 2;
             this.btnGrafos.Text = "Sistema de Rutas";
             this.btnGrafos.UseVisualStyleBackColor = true;
+            this.btnGrafos.Click += new System.EventHandler(this.btnGrafos_Click);
             // 
             // FrmInicio
             // 
