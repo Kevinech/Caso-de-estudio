@@ -18,7 +18,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 188,
-          "SelectedChildIndex": 7,
+          "SelectedChildIndex": 8,
           "Children": [
             {
               "$type": "Document",
@@ -26,9 +26,9 @@
               "Title": "Form1.cs",
               "DocumentMoniker": "C:\\Users\\inmo\\Desktop\\ProgramacionEstructurada\\Caso-de-estudio\\Caso-de-estudio\\Form1.cs",
               "RelativeDocumentMoniker": "Caso-de-estudio\\Form1.cs",
-              "ToolTip": "C:\\Users\\inmo\\Desktop\\ProgramacionEstructurada\\Caso-de-estudio\\Caso-de-estudio\\Form1.cs",
-              "RelativeToolTip": "Caso-de-estudio\\Form1.cs",
-              "ViewState": "AgIAAOwAAAAAAAAAAAAuwPgAAAANAAAAAAAAAA==",
+              "ToolTip": "C:\\Users\\inmo\\Desktop\\ProgramacionEstructurada\\Caso-de-estudio\\Caso-de-estudio\\Form1.cs*",
+              "RelativeToolTip": "Caso-de-estudio\\Form1.cs*",
+              "ViewState": "AgIAABoBAAAAAAAAAAAAAGcAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-11-14T13:26:59.262Z",
               "IsPinned": true,
@@ -56,6 +56,10 @@
             },
             {
               "$type": "Bookmark",
+              "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
+            },
+            {
+              "$type": "Bookmark",
               "Name": "ST:0:0:{1c64b9c2-e352-428e-a56d-0ace190b99a6}"
             },
             {
@@ -64,8 +68,8 @@
               "Title": "Form1.cs [Dise\u00F1o]",
               "DocumentMoniker": "C:\\Users\\inmo\\Desktop\\ProgramacionEstructurada\\Caso-de-estudio\\Caso-de-estudio\\Form1.cs",
               "RelativeDocumentMoniker": "Caso-de-estudio\\Form1.cs",
-              "ToolTip": "C:\\Users\\inmo\\Desktop\\ProgramacionEstructurada\\Caso-de-estudio\\Caso-de-estudio\\Form1.cs [Dise\u00F1o]",
-              "RelativeToolTip": "Caso-de-estudio\\Form1.cs [Dise\u00F1o]",
+              "ToolTip": "C:\\Users\\inmo\\Desktop\\ProgramacionEstructurada\\Caso-de-estudio\\Caso-de-estudio\\Form1.cs [Dise\u00F1o]*",
+              "RelativeToolTip": "Caso-de-estudio\\Form1.cs [Dise\u00F1o]*",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-11-14T13:24:47.568Z",
               "EditorCaption": " [Dise\u00F1o]"
