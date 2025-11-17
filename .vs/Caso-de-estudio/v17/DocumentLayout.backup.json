@@ -3,12 +3,20 @@
   "WorkspaceRootPath": "C:\\Users\\inmo\\Desktop\\ProgramacionEstructurada\\Caso-de-estudio\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{88AB80F6-45B1-49C3-9E58-CD6F2AF8D3DC}|Caso-de-estudio\\Caso-de-estudio.csproj|c:\\users\\inmo\\desktop\\programacionestructurada\\caso-de-estudio\\caso-de-estudio\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{88AB80F6-45B1-49C3-9E58-CD6F2AF8D3DC}|Caso-de-estudio\\Caso-de-estudio.csproj|solutionrelative:caso-de-estudio\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+      "AbsoluteMoniker": "D:0:0:{88AB80F6-45B1-49C3-9E58-CD6F2AF8D3DC}|Caso-de-estudio\\Caso-de-estudio.csproj|c:\\users\\inmo\\desktop\\programacionestructurada\\caso-de-estudio\\caso-de-estudio\\forms\\frminicio.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{88AB80F6-45B1-49C3-9E58-CD6F2AF8D3DC}|Caso-de-estudio\\Caso-de-estudio.csproj|solutionrelative:caso-de-estudio\\forms\\frminicio.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{88AB80F6-45B1-49C3-9E58-CD6F2AF8D3DC}|Caso-de-estudio\\Caso-de-estudio.csproj|c:\\users\\inmo\\desktop\\programacionestructurada\\caso-de-estudio\\caso-de-estudio\\forms\\frminicio.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{88AB80F6-45B1-49C3-9E58-CD6F2AF8D3DC}|Caso-de-estudio\\Caso-de-estudio.csproj|solutionrelative:caso-de-estudio\\forms\\frminicio.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{88AB80F6-45B1-49C3-9E58-CD6F2AF8D3DC}|Caso-de-estudio\\Caso-de-estudio.csproj|C:\\Users\\inmo\\Desktop\\ProgramacionEstructurada\\Caso-de-estudio\\caso-de-estudio\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{88AB80F6-45B1-49C3-9E58-CD6F2AF8D3DC}|Caso-de-estudio\\Caso-de-estudio.csproj|solutionrelative:caso-de-estudio\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{88AB80F6-45B1-49C3-9E58-CD6F2AF8D3DC}|Caso-de-estudio\\Caso-de-estudio.csproj|c:\\users\\inmo\\desktop\\programacionestructurada\\caso-de-estudio\\caso-de-estudio\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{88AB80F6-45B1-49C3-9E58-CD6F2AF8D3DC}|Caso-de-estudio\\Caso-de-estudio.csproj|solutionrelative:caso-de-estudio\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     }
   ],
   "DocumentGroupContainers": [
@@ -18,21 +26,46 @@
       "DocumentGroups": [
         {
           "DockedWidth": 188,
-          "SelectedChildIndex": 8,
+          "SelectedChildIndex": 2,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 2,
               "Title": "Form1.cs",
               "DocumentMoniker": "C:\\Users\\inmo\\Desktop\\ProgramacionEstructurada\\Caso-de-estudio\\Caso-de-estudio\\Form1.cs",
               "RelativeDocumentMoniker": "Caso-de-estudio\\Form1.cs",
-              "ToolTip": "C:\\Users\\inmo\\Desktop\\ProgramacionEstructurada\\Caso-de-estudio\\Caso-de-estudio\\Form1.cs*",
-              "RelativeToolTip": "Caso-de-estudio\\Form1.cs*",
-              "ViewState": "AgIAABoBAAAAAAAAAAAAAGcAAAAAAAAAAAAAAA==",
+              "ToolTip": "C:\\Users\\inmo\\Desktop\\ProgramacionEstructurada\\Caso-de-estudio\\Caso-de-estudio\\Form1.cs",
+              "RelativeToolTip": "Caso-de-estudio\\Form1.cs",
+              "ViewState": "AgIAALQAAAAAAAAAAAAgwLgAAAAmAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-11-14T13:26:59.262Z",
               "IsPinned": true,
               "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "FrmInicio.cs",
+              "DocumentMoniker": "C:\\Users\\inmo\\Desktop\\ProgramacionEstructurada\\Caso-de-estudio\\Caso-de-estudio\\Forms\\FrmInicio.cs",
+              "RelativeDocumentMoniker": "Caso-de-estudio\\Forms\\FrmInicio.cs",
+              "ToolTip": "C:\\Users\\inmo\\Desktop\\ProgramacionEstructurada\\Caso-de-estudio\\Caso-de-estudio\\Forms\\FrmInicio.cs",
+              "RelativeToolTip": "Caso-de-estudio\\Forms\\FrmInicio.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAABDAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-17T01:11:19.23Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "FrmInicio.cs [Dise\u00F1o]",
+              "DocumentMoniker": "C:\\Users\\inmo\\Desktop\\ProgramacionEstructurada\\Caso-de-estudio\\Caso-de-estudio\\Forms\\FrmInicio.cs",
+              "RelativeDocumentMoniker": "Caso-de-estudio\\Forms\\FrmInicio.cs",
+              "ToolTip": "C:\\Users\\inmo\\Desktop\\ProgramacionEstructurada\\Caso-de-estudio\\Caso-de-estudio\\Forms\\FrmInicio.cs [Dise\u00F1o]",
+              "RelativeToolTip": "Caso-de-estudio\\Forms\\FrmInicio.cs [Dise\u00F1o]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-17T01:11:13.048Z",
+              "EditorCaption": " [Dise\u00F1o]"
             },
             {
               "$type": "Bookmark",
@@ -56,20 +89,16 @@
             },
             {
               "$type": "Bookmark",
-              "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
-            },
-            {
-              "$type": "Bookmark",
               "Name": "ST:0:0:{1c64b9c2-e352-428e-a56d-0ace190b99a6}"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 3,
               "Title": "Form1.cs [Dise\u00F1o]",
               "DocumentMoniker": "C:\\Users\\inmo\\Desktop\\ProgramacionEstructurada\\Caso-de-estudio\\Caso-de-estudio\\Form1.cs",
               "RelativeDocumentMoniker": "Caso-de-estudio\\Form1.cs",
-              "ToolTip": "C:\\Users\\inmo\\Desktop\\ProgramacionEstructurada\\Caso-de-estudio\\Caso-de-estudio\\Form1.cs [Dise\u00F1o]*",
-              "RelativeToolTip": "Caso-de-estudio\\Form1.cs [Dise\u00F1o]*",
+              "ToolTip": "C:\\Users\\inmo\\Desktop\\ProgramacionEstructurada\\Caso-de-estudio\\Caso-de-estudio\\Form1.cs [Dise\u00F1o]",
+              "RelativeToolTip": "Caso-de-estudio\\Form1.cs [Dise\u00F1o]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-11-14T13:24:47.568Z",
               "EditorCaption": " [Dise\u00F1o]"

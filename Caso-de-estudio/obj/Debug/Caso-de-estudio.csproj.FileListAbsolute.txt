@@ -13,3 +13,4 @@ C:\Users\inmo\Desktop\ProgramacionEstructurada\Caso-de-estudio\Caso-de-estudio\o
 C:\Users\inmo\Desktop\ProgramacionEstructurada\Caso-de-estudio\Caso-de-estudio\obj\Debug\Caso-de-estudio.exe
 C:\Users\inmo\Desktop\ProgramacionEstructurada\Caso-de-estudio\Caso-de-estudio\obj\Debug\Caso-de-estudio.pdb
 C:\Users\inmo\Desktop\ProgramacionEstructurada\Caso-de-estudio\Caso-de-estudio\obj\Debug\Caso-de-estudio.exe.config
+C:\Users\inmo\Desktop\ProgramacionEstructurada\Caso-de-estudio\Caso-de-estudio\obj\Debug\Caso_de_estudio.Forms.FrmInicio.resources
