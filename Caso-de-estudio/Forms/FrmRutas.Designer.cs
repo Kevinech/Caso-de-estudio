@@ -200,6 +200,7 @@
             this.btnMostrarC.TabIndex = 11;
             this.btnMostrarC.Text = "Mostrar";
             this.btnMostrarC.UseVisualStyleBackColor = true;
+            this.btnMostrarC.Click += new System.EventHandler(this.btnMostrarC_Click);
             // 
             // label5
             // 

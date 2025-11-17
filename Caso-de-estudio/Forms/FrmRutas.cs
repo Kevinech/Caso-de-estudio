@@ -19,16 +19,16 @@ namespace Caso_de_estudio.Forms
             InitializeComponent();
         }
 
-        Grafo miGrafo = new Grafo();
+        Grafo SistemaR = new Grafo();
 
 
 
         private void btnAgregarE_Click(object sender, EventArgs e)
         {
 
-            miGrafo.GetAgregarNodo(tbAgregarE.Text);
+            SistemaR.GetAgregarNodo(tbAgregarE.Text);
             lbEdificios.Items.Add(tbAgregarE.Text);
-            // Actualiza combos si usas para conexiones
+            
             cbOrigenE.Items.Add(tbAgregarE.Text);
             cbDestinoE.Items.Add(tbAgregarE.Text);
             tbAgregarE.Clear();
@@ -38,13 +38,52 @@ namespace Caso_de_estudio.Forms
 
         private void btnAgregarD_Click(object sender, EventArgs e)
         {
+        
+        
             string origen = cbOrigenE.Text;
             string destino = cbDestinoE.Text;
-            int distancia = int.Parse(tbDistancia.Text); // o usa TryParse!
+            string strDistancia = tbDistancia.Text;
 
-            miGrafo.GetConectar(origen, destino, distancia);
-            lbVisualización.Items.Add($"{origen} <---> {destino} : {distancia}");
-            tbDistancia.Clear();
+            // Validaciones básicas
+            if (string.IsNullOrWhiteSpace(origen) || string.IsNullOrWhiteSpace(destino))
+            {
+                MessageBox.Show("Selecciona ambos edificios para conectar.", "Alerta", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                return;
+            }
+            if (string.IsNullOrWhiteSpace(strDistancia))
+            {
+                MessageBox.Show("Ingrese la distancia entre los edificios.", "Alerta", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                return;
+            }
+
+            int distancia;
+            // Manejo de error al convertir distancia
+            if (!int.TryParse(strDistancia, out distancia) || distancia < 0)
+            {
+                MessageBox.Show("La distancia debe ser un número entero positivo.", "Alerta", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                return;
+            }
+
+            try
+            {
+                SistemaR.GetConectar(origen, destino, distancia);
+                lbVisualización.Items.Add($"{origen} <----> {destino} : {distancia}");
+                tbDistancia.Clear();
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("Error al conectar edificios: " + ex.Message, "Alerta", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+            }
+        }
+
+        
+
+        private void btnMostrarC_Click(object sender, EventArgs e)
+        {
+            var conexiones = SistemaR.MostrarConexiones(cbOrigenE.Text);
+            lbVisualización.Items.Clear();
+            foreach (var c in conexiones)
+                lbVisualización.Items.Add(c);
         }
     }
 }
