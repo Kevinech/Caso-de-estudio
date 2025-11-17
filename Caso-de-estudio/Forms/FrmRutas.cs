@@ -42,7 +42,7 @@ namespace Caso_de_estudio.Forms
         
             string origen = cbOrigenE.Text;
             string destino = cbDestinoE.Text;
-            string strDistancia = tbDistancia.Text;
+            string NDistancia = tbDistancia.Text;
 
             // Validaciones básicas
             if (string.IsNullOrWhiteSpace(origen) || string.IsNullOrWhiteSpace(destino))
@@ -50,7 +50,7 @@ namespace Caso_de_estudio.Forms
                 MessageBox.Show("Selecciona ambos edificios para conectar.", "Alerta", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                 return;
             }
-            if (string.IsNullOrWhiteSpace(strDistancia))
+            if (string.IsNullOrWhiteSpace(NDistancia))
             {
                 MessageBox.Show("Ingrese la distancia entre los edificios.", "Alerta", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                 return;
@@ -58,7 +58,7 @@ namespace Caso_de_estudio.Forms
 
             int distancia;
             // Manejo de error al convertir distancia
-            if (!int.TryParse(strDistancia, out distancia) || distancia < 0)
+            if (!int.TryParse(NDistancia, out distancia) || distancia < 0)
             {
                 MessageBox.Show("La distancia debe ser un número entero positivo.", "Alerta", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                 return;
@@ -67,7 +67,7 @@ namespace Caso_de_estudio.Forms
             try
             {
                 SistemaR.GetConectar(origen, destino, distancia);
-                lbVisualización.Items.Add($"{origen} <----> {destino} : {distancia}");
+                lbVisualización.Items.Add($"{origen} <----> {destino} :  {distancia}");
                 tbDistancia.Clear();
             }
             catch (Exception ex)
@@ -84,6 +84,14 @@ namespace Caso_de_estudio.Forms
             lbVisualización.Items.Clear();
             foreach (var c in conexiones)
                 lbVisualización.Items.Add(c);
+
+        }
+
+        private void btnValidarC_Click(object sender, EventArgs e)
+        {
+            bool conexo = SistemaR.EsConexo();
+            lbVisualización.Items.Clear();
+            lbVisualización.Items.Add(conexo ? "Los grafos estan conectados correctamente." : "los grafos no estan conectados.");
         }
     }
 }

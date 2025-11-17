@@ -29,25 +29,26 @@
         private void InitializeComponent()
         {
             this.groupBox1 = new System.Windows.Forms.GroupBox();
-            this.tbAgregarE = new System.Windows.Forms.TextBox();
-            this.btnAgregarE = new System.Windows.Forms.Button();
             this.lbEdificios = new System.Windows.Forms.ListBox();
+            this.btnAgregarE = new System.Windows.Forms.Button();
+            this.tbAgregarE = new System.Windows.Forms.TextBox();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
-            this.cbOrigenE = new System.Windows.Forms.ComboBox();
-            this.cbDestinoE = new System.Windows.Forms.ComboBox();
-            this.label1 = new System.Windows.Forms.Label();
-            this.label2 = new System.Windows.Forms.Label();
-            this.btnAgregarD = new System.Windows.Forms.Button();
-            this.tbDistancia = new System.Windows.Forms.TextBox();
             this.label3 = new System.Windows.Forms.Label();
+            this.tbDistancia = new System.Windows.Forms.TextBox();
+            this.btnAgregarD = new System.Windows.Forms.Button();
+            this.label2 = new System.Windows.Forms.Label();
+            this.label1 = new System.Windows.Forms.Label();
+            this.cbDestinoE = new System.Windows.Forms.ComboBox();
+            this.cbOrigenE = new System.Windows.Forms.ComboBox();
             this.groupBox3 = new System.Windows.Forms.GroupBox();
-            this.label4 = new System.Windows.Forms.Label();
-            this.btnMostrarC = new System.Windows.Forms.Button();
-            this.label5 = new System.Windows.Forms.Label();
-            this.btnValidarC = new System.Windows.Forms.Button();
-            this.label6 = new System.Windows.Forms.Label();
-            this.btnRutasC = new System.Windows.Forms.Button();
             this.lbVisualización = new System.Windows.Forms.ListBox();
+            this.btnRutasC = new System.Windows.Forms.Button();
+            this.label6 = new System.Windows.Forms.Label();
+            this.btnValidarC = new System.Windows.Forms.Button();
+            this.label5 = new System.Windows.Forms.Label();
+            this.btnMostrarC = new System.Windows.Forms.Button();
+            this.label4 = new System.Windows.Forms.Label();
+            this.button1 = new System.Windows.Forms.Button();
             this.groupBox1.SuspendLayout();
             this.groupBox2.SuspendLayout();
             this.groupBox3.SuspendLayout();
@@ -65,12 +66,14 @@
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Gestión de edificios";
             // 
-            // tbAgregarE
+            // lbEdificios
             // 
-            this.tbAgregarE.Location = new System.Drawing.Point(35, 41);
-            this.tbAgregarE.Name = "tbAgregarE";
-            this.tbAgregarE.Size = new System.Drawing.Size(306, 26);
-            this.tbAgregarE.TabIndex = 0;
+            this.lbEdificios.FormattingEnabled = true;
+            this.lbEdificios.ItemHeight = 20;
+            this.lbEdificios.Location = new System.Drawing.Point(35, 89);
+            this.lbEdificios.Name = "lbEdificios";
+            this.lbEdificios.Size = new System.Drawing.Size(401, 344);
+            this.lbEdificios.TabIndex = 2;
             // 
             // btnAgregarE
             // 
@@ -82,14 +85,12 @@
             this.btnAgregarE.UseVisualStyleBackColor = true;
             this.btnAgregarE.Click += new System.EventHandler(this.btnAgregarE_Click);
             // 
-            // lbEdificios
+            // tbAgregarE
             // 
-            this.lbEdificios.FormattingEnabled = true;
-            this.lbEdificios.ItemHeight = 20;
-            this.lbEdificios.Location = new System.Drawing.Point(35, 89);
-            this.lbEdificios.Name = "lbEdificios";
-            this.lbEdificios.Size = new System.Drawing.Size(401, 344);
-            this.lbEdificios.TabIndex = 2;
+            this.tbAgregarE.Location = new System.Drawing.Point(35, 41);
+            this.tbAgregarE.Name = "tbAgregarE";
+            this.tbAgregarE.Size = new System.Drawing.Size(306, 26);
+            this.tbAgregarE.TabIndex = 0;
             // 
             // groupBox2
             // 
@@ -107,39 +108,21 @@
             this.groupBox2.TabStop = false;
             this.groupBox2.Text = "Conexiones";
             // 
-            // cbOrigenE
+            // label3
             // 
-            this.cbOrigenE.FormattingEnabled = true;
-            this.cbOrigenE.Location = new System.Drawing.Point(29, 63);
-            this.cbOrigenE.Name = "cbOrigenE";
-            this.cbOrigenE.Size = new System.Drawing.Size(249, 28);
-            this.cbOrigenE.TabIndex = 4;
+            this.label3.AutoSize = true;
+            this.label3.Location = new System.Drawing.Point(25, 224);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(272, 20);
+            this.label3.TabIndex = 7;
+            this.label3.Text = "Ingrese la distancia entre los edificios";
             // 
-            // cbDestinoE
+            // tbDistancia
             // 
-            this.cbDestinoE.FormattingEnabled = true;
-            this.cbDestinoE.Location = new System.Drawing.Point(29, 156);
-            this.cbDestinoE.Name = "cbDestinoE";
-            this.cbDestinoE.Size = new System.Drawing.Size(249, 28);
-            this.cbDestinoE.TabIndex = 6;
-            // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(62, 34);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(190, 20);
-            this.label1.TabIndex = 3;
-            this.label1.Text = "seleccionar edificio origen";
-            // 
-            // label2
-            // 
-            this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(51, 121);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(198, 20);
-            this.label2.TabIndex = 5;
-            this.label2.Text = "seleccionar edificio destino";
+            this.tbDistancia.Location = new System.Drawing.Point(55, 262);
+            this.tbDistancia.Name = "tbDistancia";
+            this.tbDistancia.Size = new System.Drawing.Size(197, 26);
+            this.tbDistancia.TabIndex = 8;
             // 
             // btnAgregarD
             // 
@@ -151,24 +134,45 @@
             this.btnAgregarD.UseVisualStyleBackColor = true;
             this.btnAgregarD.Click += new System.EventHandler(this.btnAgregarD_Click);
             // 
-            // tbDistancia
+            // label2
             // 
-            this.tbDistancia.Location = new System.Drawing.Point(55, 262);
-            this.tbDistancia.Name = "tbDistancia";
-            this.tbDistancia.Size = new System.Drawing.Size(197, 26);
-            this.tbDistancia.TabIndex = 8;
+            this.label2.AutoSize = true;
+            this.label2.Location = new System.Drawing.Point(51, 121);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(198, 20);
+            this.label2.TabIndex = 5;
+            this.label2.Text = "seleccionar edificio destino";
             // 
-            // label3
+            // label1
             // 
-            this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(25, 224);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(272, 20);
-            this.label3.TabIndex = 7;
-            this.label3.Text = "Ingrese la distancia entre los edificios";
+            this.label1.AutoSize = true;
+            this.label1.Location = new System.Drawing.Point(62, 34);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(190, 20);
+            this.label1.TabIndex = 3;
+            this.label1.Text = "seleccionar edificio origen";
+            // 
+            // cbDestinoE
+            // 
+            this.cbDestinoE.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cbDestinoE.FormattingEnabled = true;
+            this.cbDestinoE.Location = new System.Drawing.Point(29, 156);
+            this.cbDestinoE.Name = "cbDestinoE";
+            this.cbDestinoE.Size = new System.Drawing.Size(249, 28);
+            this.cbDestinoE.TabIndex = 6;
+            // 
+            // cbOrigenE
+            // 
+            this.cbOrigenE.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cbOrigenE.FormattingEnabled = true;
+            this.cbOrigenE.Location = new System.Drawing.Point(29, 63);
+            this.cbOrigenE.Name = "cbOrigenE";
+            this.cbOrigenE.Size = new System.Drawing.Size(249, 28);
+            this.cbOrigenE.TabIndex = 4;
             // 
             // groupBox3
             // 
+            this.groupBox3.Controls.Add(this.button1);
             this.groupBox3.Controls.Add(this.lbVisualización);
             this.groupBox3.Controls.Add(this.btnRutasC);
             this.groupBox3.Controls.Add(this.label6);
@@ -183,14 +187,52 @@
             this.groupBox3.TabStop = false;
             this.groupBox3.Text = "Operaciones";
             // 
-            // label4
+            // lbVisualización
             // 
-            this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(43, 34);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(230, 20);
-            this.label4.TabIndex = 10;
-            this.label4.Text = "Mostrar conexiones de edificios";
+            this.lbVisualización.FormattingEnabled = true;
+            this.lbVisualización.ItemHeight = 20;
+            this.lbVisualización.Location = new System.Drawing.Point(6, 250);
+            this.lbVisualización.Name = "lbVisualización";
+            this.lbVisualización.Size = new System.Drawing.Size(324, 204);
+            this.lbVisualización.TabIndex = 17;
+            // 
+            // btnRutasC
+            // 
+            this.btnRutasC.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
+            this.btnRutasC.Location = new System.Drawing.Point(6, 202);
+            this.btnRutasC.Name = "btnRutasC";
+            this.btnRutasC.Size = new System.Drawing.Size(151, 42);
+            this.btnRutasC.TabIndex = 15;
+            this.btnRutasC.Text = "Mostrar rutas";
+            this.btnRutasC.UseVisualStyleBackColor = true;
+            // 
+            // label6
+            // 
+            this.label6.AutoSize = true;
+            this.label6.Location = new System.Drawing.Point(115, 179);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(103, 20);
+            this.label6.TabIndex = 14;
+            this.label6.Text = "Mostrar rutas";
+            // 
+            // btnValidarC
+            // 
+            this.btnValidarC.Location = new System.Drawing.Point(47, 135);
+            this.btnValidarC.Name = "btnValidarC";
+            this.btnValidarC.Size = new System.Drawing.Size(226, 28);
+            this.btnValidarC.TabIndex = 13;
+            this.btnValidarC.Text = "Conexión";
+            this.btnValidarC.UseVisualStyleBackColor = true;
+            this.btnValidarC.Click += new System.EventHandler(this.btnValidarC_Click);
+            // 
+            // label5
+            // 
+            this.label5.AutoSize = true;
+            this.label5.Location = new System.Drawing.Point(93, 103);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(125, 20);
+            this.label5.TabIndex = 12;
+            this.label5.Text = "Validar conexión";
             // 
             // btnMostrarC
             // 
@@ -202,50 +244,24 @@
             this.btnMostrarC.UseVisualStyleBackColor = true;
             this.btnMostrarC.Click += new System.EventHandler(this.btnMostrarC_Click);
             // 
-            // label5
+            // label4
             // 
-            this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(93, 103);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(125, 20);
-            this.label5.TabIndex = 12;
-            this.label5.Text = "Validar conexión";
+            this.label4.AutoSize = true;
+            this.label4.Location = new System.Drawing.Point(43, 34);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(230, 20);
+            this.label4.TabIndex = 10;
+            this.label4.Text = "Mostrar conexiones de edificios";
             // 
-            // btnValidarC
+            // button1
             // 
-            this.btnValidarC.Location = new System.Drawing.Point(47, 135);
-            this.btnValidarC.Name = "btnValidarC";
-            this.btnValidarC.Size = new System.Drawing.Size(226, 28);
-            this.btnValidarC.TabIndex = 13;
-            this.btnValidarC.Text = "Conexión";
-            this.btnValidarC.UseVisualStyleBackColor = true;
-            // 
-            // label6
-            // 
-            this.label6.AutoSize = true;
-            this.label6.Location = new System.Drawing.Point(69, 179);
-            this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(185, 20);
-            this.label6.TabIndex = 14;
-            this.label6.Text = "Mostrar rutas más cortas";
-            // 
-            // btnRutasC
-            // 
-            this.btnRutasC.Location = new System.Drawing.Point(47, 218);
-            this.btnRutasC.Name = "btnRutasC";
-            this.btnRutasC.Size = new System.Drawing.Size(226, 26);
-            this.btnRutasC.TabIndex = 15;
-            this.btnRutasC.Text = "Mostrar rutas";
-            this.btnRutasC.UseVisualStyleBackColor = true;
-            // 
-            // lbVisualización
-            // 
-            this.lbVisualización.FormattingEnabled = true;
-            this.lbVisualización.ItemHeight = 20;
-            this.lbVisualización.Location = new System.Drawing.Point(6, 250);
-            this.lbVisualización.Name = "lbVisualización";
-            this.lbVisualización.Size = new System.Drawing.Size(324, 204);
-            this.lbVisualización.TabIndex = 17;
+            this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
+            this.button1.Location = new System.Drawing.Point(179, 202);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(151, 42);
+            this.button1.TabIndex = 16;
+            this.button1.Text = "Mostrar rutas cortas";
+            this.button1.UseVisualStyleBackColor = true;
             // 
             // FrmRutas
             // 
@@ -292,5 +308,6 @@
         private System.Windows.Forms.ListBox lbVisualización;
         private System.Windows.Forms.Button btnRutasC;
         private System.Windows.Forms.Label label6;
+        private System.Windows.Forms.Button button1;
     }
 }
