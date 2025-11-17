@@ -37,7 +37,7 @@
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Gill Sans Ultra Bold", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(88, 128);
+            this.label1.Location = new System.Drawing.Point(110, 152);
             this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(408, 23);
@@ -46,7 +46,7 @@
             // 
             // btnArboles
             // 
-            this.btnArboles.Location = new System.Drawing.Point(57, 202);
+            this.btnArboles.Location = new System.Drawing.Point(33, 239);
             this.btnArboles.Name = "btnArboles";
             this.btnArboles.Size = new System.Drawing.Size(173, 69);
             this.btnArboles.TabIndex = 1;
@@ -56,7 +56,7 @@
             // 
             // btnGrafos
             // 
-            this.btnGrafos.Location = new System.Drawing.Point(323, 202);
+            this.btnGrafos.Location = new System.Drawing.Point(419, 239);
             this.btnGrafos.Name = "btnGrafos";
             this.btnGrafos.Size = new System.Drawing.Size(173, 69);
             this.btnGrafos.TabIndex = 2;

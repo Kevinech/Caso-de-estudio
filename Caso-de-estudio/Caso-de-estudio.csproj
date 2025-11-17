@@ -56,11 +56,11 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Clases\Nodos.cs" />
-    <Compile Include="Form1.cs">
+    <Compile Include="FrmJerarquia.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Form1.Designer.cs">
-      <DependentUpon>Form1.cs</DependentUpon>
+    <Compile Include="FrmJerarquia.Designer.cs">
+      <DependentUpon>FrmJerarquia.cs</DependentUpon>
     </Compile>
     <Compile Include="Forms\FrmInicio.cs">
       <SubType>Form</SubType>
@@ -70,8 +70,8 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <EmbeddedResource Include="Form1.resx">
-      <DependentUpon>Form1.cs</DependentUpon>
+    <EmbeddedResource Include="FrmJerarquia.resx">
+      <DependentUpon>FrmJerarquia.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\FrmInicio.resx">
       <DependentUpon>FrmInicio.cs</DependentUpon>

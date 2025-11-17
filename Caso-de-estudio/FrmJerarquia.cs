@@ -11,9 +11,9 @@ using static System.Windows.Forms.VisualStyles.VisualStyleElement;
 
 namespace Caso_de_estudio
 {
-    public partial class Form1 : MetroFramework.Forms.MetroForm
+    public partial class FrmJerarquia : MetroFramework.Forms.MetroForm
     {
-        public Form1()
+        public FrmJerarquia()
         {
             InitializeComponent();
 
@@ -134,13 +134,13 @@ namespace Caso_de_estudio
             lbOrden.Items.Clear(); // Borra el contenido anterior
             
            
-            List<string> resultado = new List<string>();
-            RecorridoPreorden(tvPuestos.Nodes, resultado);
+            List<string> nods = new List<string>();
+            RecorridoPreorden(tvPuestos.Nodes, nods);
 
             // Ahora pasas el resultado al ListBox
-            foreach (string item in resultado)
+            foreach (string item in nods)
             {
-                lbOrden.Items.Add(item);
+                lbOrden.Items.Add($"- {item}");
             }
             
         }
@@ -153,7 +153,7 @@ namespace Caso_de_estudio
                 nodos.Add(nodoR.Text);
                 RecorridoPreorden(nodoR.Nodes, nodos);
             }
-            
+            lbOrden.Items.Clear();
         }
 
 
@@ -162,13 +162,13 @@ namespace Caso_de_estudio
 
             lbOrden.Items.Clear(); // Borra el contenido anterior
             
-            List<string> resultado = new List<string>();
-            RecorridoPreorden(tvPuestos.Nodes, resultado);
+            List<string> nodos = new List<string>();
+            RecorridoPreorden(tvPuestos.Nodes, nodos);
 
             // Ahora pasas el resultado al ListBox
-            foreach (string item in resultado)
+            foreach (string item in nodos)
             {
-                lbOrden.Items.Add(item);
+                lbOrden.Items.Add($"- {item}");
             }
 
 
@@ -184,6 +184,7 @@ namespace Caso_de_estudio
                 RecorridoPostorden(nodoR.Nodes, nodos);
                 nodos.Add(nodoR.Text);
             }
+            lbOrden.Items.Clear();
 
         }
 
@@ -223,9 +224,28 @@ namespace Caso_de_estudio
 
         private void btnConteoP_Click(object sender, EventArgs e)
         {
-           
+            if (tvPuestos.Nodes.Count > 0)
+            {
+                int total = GetContarN(tvPuestos.Nodes[0]);
+                MessageBox.Show("Total de nodos: " + total);
+            }
+            else
+            {
+                MessageBox.Show("No hay nodos en el árbol.");
+            }
         }
 
-        
+        public int GetContarN(TreeNode nodo)
+        {
+            if (nodo == null) return 0;
+            int contador = 1; // cuenta el nodo actual
+            foreach (TreeNode hijo in nodo.Nodes)
+            {
+                contador += GetContarN(hijo);
+            }
+            return contador;
+
+        }
+
     }
 }

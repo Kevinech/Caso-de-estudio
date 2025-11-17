@@ -1,6 +1,6 @@
 ﻿namespace Caso_de_estudio
 {
-    partial class Form1
+    partial class FrmJerarquia
     {
         /// <summary>
         /// Variable del diseñador necesaria.

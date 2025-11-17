@@ -19,7 +19,7 @@ namespace Caso_de_estudio.Forms
 
         private void btnArboles_Click(object sender, EventArgs e)
         {
-            Form1 arbol = new Form1();
+            FrmJerarquia arbol = new FrmJerarquia();
             arbol.ShowDialog();
         }
     }
