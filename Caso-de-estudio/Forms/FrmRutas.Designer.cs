@@ -29,12 +29,12 @@
         private void InitializeComponent()
         {
             this.groupBox1 = new System.Windows.Forms.GroupBox();
-            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.tbAgregarE = new System.Windows.Forms.TextBox();
             this.btnAgregarE = new System.Windows.Forms.Button();
             this.lbEdificios = new System.Windows.Forms.ListBox();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
-            this.comboBox1 = new System.Windows.Forms.ComboBox();
-            this.comboBox2 = new System.Windows.Forms.ComboBox();
+            this.cbOrigenE = new System.Windows.Forms.ComboBox();
+            this.cbDestinoE = new System.Windows.Forms.ComboBox();
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.btnAgregarD = new System.Windows.Forms.Button();
@@ -57,7 +57,7 @@
             // 
             this.groupBox1.Controls.Add(this.lbEdificios);
             this.groupBox1.Controls.Add(this.btnAgregarE);
-            this.groupBox1.Controls.Add(this.textBox1);
+            this.groupBox1.Controls.Add(this.tbAgregarE);
             this.groupBox1.Location = new System.Drawing.Point(34, 86);
             this.groupBox1.Name = "groupBox1";
             this.groupBox1.Size = new System.Drawing.Size(458, 464);
@@ -65,12 +65,12 @@
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Gestión de edificios";
             // 
-            // textBox1
+            // tbAgregarE
             // 
-            this.textBox1.Location = new System.Drawing.Point(35, 41);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(306, 26);
-            this.textBox1.TabIndex = 0;
+            this.tbAgregarE.Location = new System.Drawing.Point(35, 41);
+            this.tbAgregarE.Name = "tbAgregarE";
+            this.tbAgregarE.Size = new System.Drawing.Size(306, 26);
+            this.tbAgregarE.TabIndex = 0;
             // 
             // btnAgregarE
             // 
@@ -98,8 +98,8 @@
             this.groupBox2.Controls.Add(this.btnAgregarD);
             this.groupBox2.Controls.Add(this.label2);
             this.groupBox2.Controls.Add(this.label1);
-            this.groupBox2.Controls.Add(this.comboBox2);
-            this.groupBox2.Controls.Add(this.comboBox1);
+            this.groupBox2.Controls.Add(this.cbDestinoE);
+            this.groupBox2.Controls.Add(this.cbOrigenE);
             this.groupBox2.Location = new System.Drawing.Point(510, 86);
             this.groupBox2.Name = "groupBox2";
             this.groupBox2.Size = new System.Drawing.Size(314, 464);
@@ -107,21 +107,21 @@
             this.groupBox2.TabStop = false;
             this.groupBox2.Text = "Conexiones";
             // 
-            // comboBox1
+            // cbOrigenE
             // 
-            this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Location = new System.Drawing.Point(29, 63);
-            this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(249, 28);
-            this.comboBox1.TabIndex = 4;
+            this.cbOrigenE.FormattingEnabled = true;
+            this.cbOrigenE.Location = new System.Drawing.Point(29, 63);
+            this.cbOrigenE.Name = "cbOrigenE";
+            this.cbOrigenE.Size = new System.Drawing.Size(249, 28);
+            this.cbOrigenE.TabIndex = 4;
             // 
-            // comboBox2
+            // cbDestinoE
             // 
-            this.comboBox2.FormattingEnabled = true;
-            this.comboBox2.Location = new System.Drawing.Point(29, 156);
-            this.comboBox2.Name = "comboBox2";
-            this.comboBox2.Size = new System.Drawing.Size(249, 28);
-            this.comboBox2.TabIndex = 6;
+            this.cbDestinoE.FormattingEnabled = true;
+            this.cbDestinoE.Location = new System.Drawing.Point(29, 156);
+            this.cbDestinoE.Name = "cbDestinoE";
+            this.cbDestinoE.Size = new System.Drawing.Size(249, 28);
+            this.cbDestinoE.TabIndex = 6;
             // 
             // label1
             // 
@@ -149,6 +149,7 @@
             this.btnAgregarD.TabIndex = 9;
             this.btnAgregarD.Text = "Agregar conexion";
             this.btnAgregarD.UseVisualStyleBackColor = true;
+            this.btnAgregarD.Click += new System.EventHandler(this.btnAgregarD_Click);
             // 
             // tbDistancia
             // 
@@ -271,15 +272,15 @@
         #endregion
 
         private System.Windows.Forms.GroupBox groupBox1;
-        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.TextBox tbAgregarE;
         private System.Windows.Forms.ListBox lbEdificios;
         private System.Windows.Forms.Button btnAgregarE;
         private System.Windows.Forms.GroupBox groupBox2;
         private System.Windows.Forms.Button btnAgregarD;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.ComboBox comboBox2;
-        private System.Windows.Forms.ComboBox comboBox1;
+        private System.Windows.Forms.ComboBox cbDestinoE;
+        private System.Windows.Forms.ComboBox cbOrigenE;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.TextBox tbDistancia;
         private System.Windows.Forms.GroupBox groupBox3;

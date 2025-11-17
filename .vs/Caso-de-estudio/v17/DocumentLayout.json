@@ -3,12 +3,12 @@
   "WorkspaceRootPath": "C:\\Users\\inmo\\Desktop\\ProgramacionEstructurada\\Caso-de-estudio\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{88AB80F6-45B1-49C3-9E58-CD6F2AF8D3DC}|Caso-de-estudio\\Caso-de-estudio.csproj|c:\\users\\inmo\\desktop\\programacionestructurada\\caso-de-estudio\\caso-de-estudio\\clases\\nodos.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{88AB80F6-45B1-49C3-9E58-CD6F2AF8D3DC}|Caso-de-estudio\\Caso-de-estudio.csproj|solutionrelative:caso-de-estudio\\clases\\nodos.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{88AB80F6-45B1-49C3-9E58-CD6F2AF8D3DC}|Caso-de-estudio\\Caso-de-estudio.csproj|C:\\Users\\inmo\\Desktop\\ProgramacionEstructurada\\Caso-de-estudio\\caso-de-estudio\\forms\\frmrutas.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{88AB80F6-45B1-49C3-9E58-CD6F2AF8D3DC}|Caso-de-estudio\\Caso-de-estudio.csproj|solutionrelative:caso-de-estudio\\forms\\frmrutas.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{88AB80F6-45B1-49C3-9E58-CD6F2AF8D3DC}|Caso-de-estudio\\Caso-de-estudio.csproj|c:\\users\\inmo\\desktop\\programacionestructurada\\caso-de-estudio\\caso-de-estudio\\clases\\nodos.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{88AB80F6-45B1-49C3-9E58-CD6F2AF8D3DC}|Caso-de-estudio\\Caso-de-estudio.csproj|solutionrelative:caso-de-estudio\\clases\\nodos.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{88AB80F6-45B1-49C3-9E58-CD6F2AF8D3DC}|Caso-de-estudio\\Caso-de-estudio.csproj|c:\\users\\inmo\\desktop\\programacionestructurada\\caso-de-estudio\\caso-de-estudio\\forms\\frmrutas.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
@@ -22,7 +22,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 188,
-          "SelectedChildIndex": 6,
+          "SelectedChildIndex": 7,
           "Children": [
             {
               "$type": "Bookmark",
@@ -50,26 +50,26 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 1,
               "Title": "Nodos.cs",
               "DocumentMoniker": "C:\\Users\\inmo\\Desktop\\ProgramacionEstructurada\\Caso-de-estudio\\Caso-de-estudio\\Clases\\Nodos.cs",
               "RelativeDocumentMoniker": "Caso-de-estudio\\Clases\\Nodos.cs",
               "ToolTip": "C:\\Users\\inmo\\Desktop\\ProgramacionEstructurada\\Caso-de-estudio\\Caso-de-estudio\\Clases\\Nodos.cs",
               "RelativeToolTip": "Caso-de-estudio\\Clases\\Nodos.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAALYAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAIYAAAAAAAAAAAAAALYAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-11-17T04:02:51.78Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 0,
               "Title": "FrmRutas.cs",
               "DocumentMoniker": "C:\\Users\\inmo\\Desktop\\ProgramacionEstructurada\\Caso-de-estudio\\Caso-de-estudio\\Forms\\FrmRutas.cs",
               "RelativeDocumentMoniker": "Caso-de-estudio\\Forms\\FrmRutas.cs",
-              "ToolTip": "C:\\Users\\inmo\\Desktop\\ProgramacionEstructurada\\Caso-de-estudio\\Caso-de-estudio\\Forms\\FrmRutas.cs",
-              "RelativeToolTip": "Caso-de-estudio\\Forms\\FrmRutas.cs",
-              "ViewState": "AgIAAAYAAAAAAAAAAAAgwBgAAAAMAAAAAAAAAA==",
+              "ToolTip": "C:\\Users\\inmo\\Desktop\\ProgramacionEstructurada\\Caso-de-estudio\\Caso-de-estudio\\Forms\\FrmRutas.cs*",
+              "RelativeToolTip": "Caso-de-estudio\\Forms\\FrmRutas.cs*",
+              "ViewState": "AgIAAB0AAAAAAAAAAAAwwC4AAAAgAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-11-17T01:52:58.876Z",
               "EditorCaption": ""
@@ -80,8 +80,8 @@
               "Title": "FrmRutas.cs [Dise\u00F1o]",
               "DocumentMoniker": "C:\\Users\\inmo\\Desktop\\ProgramacionEstructurada\\Caso-de-estudio\\Caso-de-estudio\\Forms\\FrmRutas.cs",
               "RelativeDocumentMoniker": "Caso-de-estudio\\Forms\\FrmRutas.cs",
-              "ToolTip": "C:\\Users\\inmo\\Desktop\\ProgramacionEstructurada\\Caso-de-estudio\\Caso-de-estudio\\Forms\\FrmRutas.cs [Dise\u00F1o]",
-              "RelativeToolTip": "Caso-de-estudio\\Forms\\FrmRutas.cs [Dise\u00F1o]",
+              "ToolTip": "C:\\Users\\inmo\\Desktop\\ProgramacionEstructurada\\Caso-de-estudio\\Caso-de-estudio\\Forms\\FrmRutas.cs [Dise\u00F1o]*",
+              "RelativeToolTip": "Caso-de-estudio\\Forms\\FrmRutas.cs [Dise\u00F1o]*",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-11-17T01:50:37.742Z",
               "EditorCaption": " [Dise\u00F1o]"

@@ -3,8 +3,8 @@
   "WorkspaceRootPath": "C:\\Users\\inmo\\Desktop\\ProgramacionEstructurada\\Caso-de-estudio\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{88AB80F6-45B1-49C3-9E58-CD6F2AF8D3DC}|Caso-de-estudio\\Caso-de-estudio.csproj|c:\\users\\inmo\\desktop\\programacionestructurada\\caso-de-estudio\\caso-de-estudio\\frmjerarquia.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{88AB80F6-45B1-49C3-9E58-CD6F2AF8D3DC}|Caso-de-estudio\\Caso-de-estudio.csproj|solutionrelative:caso-de-estudio\\frmjerarquia.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+      "AbsoluteMoniker": "D:0:0:{88AB80F6-45B1-49C3-9E58-CD6F2AF8D3DC}|Caso-de-estudio\\Caso-de-estudio.csproj|c:\\users\\inmo\\desktop\\programacionestructurada\\caso-de-estudio\\caso-de-estudio\\clases\\nodos.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{88AB80F6-45B1-49C3-9E58-CD6F2AF8D3DC}|Caso-de-estudio\\Caso-de-estudio.csproj|solutionrelative:caso-de-estudio\\clases\\nodos.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{88AB80F6-45B1-49C3-9E58-CD6F2AF8D3DC}|Caso-de-estudio\\Caso-de-estudio.csproj|C:\\Users\\inmo\\Desktop\\ProgramacionEstructurada\\Caso-de-estudio\\caso-de-estudio\\forms\\frmrutas.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -22,7 +22,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 188,
-          "SelectedChildIndex": 5,
+          "SelectedChildIndex": 6,
           "Children": [
             {
               "$type": "Bookmark",
@@ -45,16 +45,21 @@
               "Name": "ST:0:0:{40ea2e6b-2121-4bb8-a43e-c83c04b51041}"
             },
             {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{1c64b9c2-e352-428e-a56d-0ace190b99a6}"
+            },
+            {
               "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "FrmJerarquia.cs [Dise\u00F1o]",
-              "DocumentMoniker": "C:\\Users\\inmo\\Desktop\\ProgramacionEstructurada\\Caso-de-estudio\\Caso-de-estudio\\FrmJerarquia.cs",
-              "RelativeDocumentMoniker": "Caso-de-estudio\\FrmJerarquia.cs",
-              "ToolTip": "C:\\Users\\inmo\\Desktop\\ProgramacionEstructurada\\Caso-de-estudio\\Caso-de-estudio\\FrmJerarquia.cs [Dise\u00F1o]*",
-              "RelativeToolTip": "Caso-de-estudio\\FrmJerarquia.cs [Dise\u00F1o]*",
+              "Title": "Nodos.cs",
+              "DocumentMoniker": "C:\\Users\\inmo\\Desktop\\ProgramacionEstructurada\\Caso-de-estudio\\Caso-de-estudio\\Clases\\Nodos.cs",
+              "RelativeDocumentMoniker": "Caso-de-estudio\\Clases\\Nodos.cs",
+              "ToolTip": "C:\\Users\\inmo\\Desktop\\ProgramacionEstructurada\\Caso-de-estudio\\Caso-de-estudio\\Clases\\Nodos.cs",
+              "RelativeToolTip": "Caso-de-estudio\\Clases\\Nodos.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAALYAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-17T02:58:06.44Z",
-              "EditorCaption": " [Dise\u00F1o]"
+              "WhenOpened": "2025-11-17T04:02:51.78Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
@@ -64,7 +69,7 @@
               "RelativeDocumentMoniker": "Caso-de-estudio\\Forms\\FrmRutas.cs",
               "ToolTip": "C:\\Users\\inmo\\Desktop\\ProgramacionEstructurada\\Caso-de-estudio\\Caso-de-estudio\\Forms\\FrmRutas.cs",
               "RelativeToolTip": "Caso-de-estudio\\Forms\\FrmRutas.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAABCAAAAAAAAAA==",
+              "ViewState": "AgIAAAYAAAAAAAAAAAAgwBgAAAAMAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-11-17T01:52:58.876Z",
               "EditorCaption": ""
