@@ -38,7 +38,6 @@
             this.btnEliminarP = new System.Windows.Forms.Button();
             this.lbOrden = new System.Windows.Forms.ListBox();
             this.btnRecorridoP = new System.Windows.Forms.Button();
-            this.btnRecorridoI = new System.Windows.Forms.Button();
             this.btnRecorridoO = new System.Windows.Forms.Button();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
@@ -131,7 +130,7 @@
             // 
             // btnRecorridoP
             // 
-            this.btnRecorridoP.Location = new System.Drawing.Point(3, 15);
+            this.btnRecorridoP.Location = new System.Drawing.Point(4, 25);
             this.btnRecorridoP.Name = "btnRecorridoP";
             this.btnRecorridoP.Size = new System.Drawing.Size(97, 40);
             this.btnRecorridoP.TabIndex = 10;
@@ -139,19 +138,9 @@
             this.btnRecorridoP.UseVisualStyleBackColor = true;
             this.btnRecorridoP.Click += new System.EventHandler(this.btnRecorridoP_Click);
             // 
-            // btnRecorridoI
-            // 
-            this.btnRecorridoI.Location = new System.Drawing.Point(3, 61);
-            this.btnRecorridoI.Name = "btnRecorridoI";
-            this.btnRecorridoI.Size = new System.Drawing.Size(97, 37);
-            this.btnRecorridoI.TabIndex = 11;
-            this.btnRecorridoI.Text = "Inorden";
-            this.btnRecorridoI.UseVisualStyleBackColor = true;
-            this.btnRecorridoI.Click += new System.EventHandler(this.btnRecorridoI_Click);
-            // 
             // btnRecorridoO
             // 
-            this.btnRecorridoO.Location = new System.Drawing.Point(4, 104);
+            this.btnRecorridoO.Location = new System.Drawing.Point(6, 77);
             this.btnRecorridoO.Name = "btnRecorridoO";
             this.btnRecorridoO.Size = new System.Drawing.Size(95, 39);
             this.btnRecorridoO.TabIndex = 12;
@@ -175,11 +164,10 @@
             // groupBox2
             // 
             this.groupBox2.Controls.Add(this.btnRecorridoP);
-            this.groupBox2.Controls.Add(this.btnRecorridoI);
             this.groupBox2.Controls.Add(this.btnRecorridoO);
-            this.groupBox2.Location = new System.Drawing.Point(625, 148);
+            this.groupBox2.Location = new System.Drawing.Point(625, 209);
             this.groupBox2.Name = "groupBox2";
-            this.groupBox2.Size = new System.Drawing.Size(103, 250);
+            this.groupBox2.Size = new System.Drawing.Size(103, 122);
             this.groupBox2.TabIndex = 14;
             this.groupBox2.TabStop = false;
             // 
@@ -217,7 +205,6 @@
         private System.Windows.Forms.Button btnEliminarP;
         private System.Windows.Forms.ListBox lbOrden;
         private System.Windows.Forms.Button btnRecorridoP;
-        private System.Windows.Forms.Button btnRecorridoI;
         private System.Windows.Forms.Button btnRecorridoO;
         private System.Windows.Forms.GroupBox groupBox1;
         private System.Windows.Forms.GroupBox groupBox2;

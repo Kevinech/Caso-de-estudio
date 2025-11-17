@@ -132,107 +132,93 @@ namespace Caso_de_estudio
         {
 
             lbOrden.Items.Clear(); // Borra el contenido anterior
-            if (tvPuestos.Nodes.Count > 0)
-            {
-                List<string> resultado = new List<string>();
-                RecorridoPreorden(tvPuestos.Nodes[0], resultado);
+            
+           
+            List<string> resultado = new List<string>();
+            RecorridoPreorden(tvPuestos.Nodes, resultado);
 
-                // Ahora pasas el resultado al ListBox
-                foreach (string item in resultado)
-                {
-                    lbOrden.Items.Add(item);
-                }
+            // Ahora pasas el resultado al ListBox
+            foreach (string item in resultado)
+            {
+                lbOrden.Items.Add(item);
             }
+            
         }
 
-        public void RecorridoPreorden(TreeNode nodo, List<string> resultado)
+        public void RecorridoPreorden(TreeNodeCollection NodoC, List<string> nodos)
         {
-            if (nodo == null) return;
-            resultado.Add(nodo.Text); // visitar nodo actual
-            foreach (TreeNode hijo in nodo.Nodes) // recorrer hijos
+           
+            foreach (TreeNode nodoR in NodoC)
             {
-                RecorridoPreorden(hijo, resultado);
+                nodos.Add(nodoR.Text);
+                RecorridoPreorden(nodoR.Nodes, nodos);
             }
+            
         }
-
-
-
-        private void btnRecorridoI_Click(object sender, EventArgs e)
-        {
-
-            lbOrden.Items.Clear(); // Borra el contenido anterior
-            if (tvPuestos.Nodes.Count > 0)
-            {
-                List<string> resultado = new List<string>();
-                RecorridoPreorden(tvPuestos.Nodes[0], resultado);
-
-                // Ahora pasas el resultado al ListBox
-                foreach (string item in resultado)
-                {
-                    lbOrden.Items.Add(item);
-                }
-
-
-            }
-
-
-        }
-
-        public void RecorridoInorden(TreeNode nodo, List<string> resultado)
-        {
-            if (nodo == null) return;
-            if (nodo.Nodes.Count > 0)
-                RecorridoInorden(nodo.Nodes[0], resultado); // primer hijo
-            resultado.Add(nodo.Text); // visitar nodo actual
-            for (int i = 1; i < nodo.Nodes.Count; i++) // demás hijos
-            {
-                RecorridoInorden(nodo.Nodes[i], resultado);
-            }
-        }
-
 
 
         private void btnRecorridoO_Click(object sender, EventArgs e)
         {
 
             lbOrden.Items.Clear(); // Borra el contenido anterior
-            if (tvPuestos.Nodes.Count > 0)
+            
+            List<string> resultado = new List<string>();
+            RecorridoPreorden(tvPuestos.Nodes, resultado);
+
+            // Ahora pasas el resultado al ListBox
+            foreach (string item in resultado)
             {
-                List<string> resultado = new List<string>();
-                RecorridoPreorden(tvPuestos.Nodes[0], resultado);
-
-                // Ahora pasas el resultado al ListBox
-                foreach (string item in resultado)
-                {
-                    lbOrden.Items.Add(item);
-                }
-
-
+                lbOrden.Items.Add(item);
             }
+
+
+           
 
         }
 
-        public void RecorridoPostorden(TreeNode nodo, List<string> resultado)
+        public void RecorridoPostorden(TreeNodeCollection nodoC, List<string> nodos)
         {
-            if (nodo == null) return;
-            foreach (TreeNode hijo in nodo.Nodes)
+            
+            foreach(TreeNode nodoR in nodoC)
             {
-                RecorridoPostorden(hijo, resultado);
+                RecorridoPostorden(nodoR.Nodes, nodos);
+                nodos.Add(nodoR.Text);
             }
-            resultado.Add(nodo.Text); // visitar nodo actual al final
+
         }
 
 
         private void btnNiveles_Click(object sender, EventArgs e)
         {
 
-            
-
-
+            if (tvPuestos.Nodes.Count > 0)
+            {
+                int niveles = GetCalcularNiveles(tvPuestos.Nodes[0]);
+                MessageBox.Show("Niveles del árbol: " + niveles);
+            }
+            else
+            {
+                MessageBox.Show("No hay nodos en el árbol.");
+            }
 
         }
 
-        
+
+
+        public int GetCalcularNiveles(TreeNode nodo)
+        {
+            if (nodo == null) return 0;
+            int maxNivel = 0;
+            foreach (TreeNode hijo in nodo.Nodes)
+            {
+                int nivelHijo = GetCalcularNiveles(hijo);
+                if (nivelHijo > maxNivel)
+                    maxNivel = nivelHijo;
+            }
+            return maxNivel + 1;
+        }
+
+
 
 
         private void btnConteoP_Click(object sender, EventArgs e)
