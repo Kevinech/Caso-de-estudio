@@ -47,12 +47,81 @@ namespace Caso_de_estudio.Clases
                 if (!nodoB.Conexiones.Contains(nodoA)) nodoB.Conexiones.Add(nodoA);
             }
 
+            // Buscar nodo por nombre
+            public Nodo GetBuscar(string nombre)
+            {
+                return Nodos.FirstOrDefault(n => n.Nombre == nombre);
+            }
 
+            // Mostrar conexiones de un edificio
+            public List<string> MostrarConexiones(string nombre)
+            {
+                var nodo = GetBuscar(nombre);
+                if (nodo != null)
+                    return nodo.Conexiones.Select(c => c.Nombre).ToList();
+                return new List<string>();
+            }
+            // Validar si el grafo es conexo usando BFS
+            public bool EsConexo()
+            {
+                if (Nodos.Count == 0) return true;
+                var visitados = new HashSet<Nodo>();
+                var cola = new Queue<Nodo>();
+                cola.Enqueue(Nodos[0]);
+                visitados.Add(Nodos[0]);
 
+                while (cola.Count > 0)
+                {
+                    var actual = cola.Dequeue();
+                    foreach (var vecino in actual.Conexiones)
+                    {
+                        if (!visitados.Contains(vecino))
+                        {
+                            visitados.Add(vecino);
+                            cola.Enqueue(vecino);
+                        }
+                    }
+                }
+                return visitados.Count == Nodos.Count;
+            }
+
+            // Recorrido BFS desde un nodo (puede mostrar ruta, pero no la más corta)
+            public List<string> BFS(string inicio)
+            {
+                var start = GetBuscar(inicio);
+                if (start == null) return new List<string>();
+
+                var resultado = new List<string>();
+                var cola = new Queue<Nodo>();
+                var visitados = new HashSet<Nodo>();
+
+                cola.Enqueue(start);
+                visitados.Add(start);
+
+                while (cola.Count > 0)
+                {
+                    var actual = cola.Dequeue();
+                    resultado.Add(actual.Nombre);
+
+                    foreach (var vecino in actual.Conexiones)
+                    {
+                        if (!visitados.Contains(vecino))
+                        {
+                            visitados.Add(vecino);
+                            cola.Enqueue(vecino);
+                        }
+                    }
+                }
+                return resultado;
+            }
         }
+
 
     }
 
-
-
 }
+
+    
+
+
+
